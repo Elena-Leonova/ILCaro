@@ -48,6 +48,24 @@ public class LoginTests extends TestBase{
 //        Assert.assertTrue(app.getUser().isLoggedSuccess());
 
     }
+
+    @Test
+    public void negativeLoginWrongEmail(){
+        User user = new User().withEmail("lena.postrashgmail.com").withPassword("Mynameislena1!");
+        app.getUser().openLoginForm();
+        app.getUser().fillLoginForm(user);
+        app.getUser().submitForm();
+        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
+    }
+
+    @Test
+    public void negativeLoginWrongPassword(){
+        User user = new User().withEmail("lena.postrash@gmail.com").withPassword("Mynameislena1");
+        app.getUser().openLoginForm();
+        app.getUser().fillLoginForm(user);
+        app.getUser().submitForm();
+        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
+    }
     @AfterMethod
     public void postCondition(){
         app.getUser().clickButton();
