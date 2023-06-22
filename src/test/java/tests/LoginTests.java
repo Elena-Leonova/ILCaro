@@ -55,7 +55,8 @@ public class LoginTests extends TestBase{
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
-        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
+        Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[.=\"It'snot look like email\"]")));
+       //Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
     }
 
     @Test
@@ -68,6 +69,6 @@ public class LoginTests extends TestBase{
     }
     @AfterMethod
     public void postCondition(){
-        app.getUser().clickButton();
+        app.getUser().clickOkButton();
     }
 }
