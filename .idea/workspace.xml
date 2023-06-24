@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7d0785-f18b-4f20-8c76-30628d906a94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +45,8 @@
     &quot;last_opened_file_path&quot;: &quot;D:/QA/Automation/QA_Auto_Projects/Leumi&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LoginTests.negativeLoginWrongEmail">
-    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.AddNewCarsTests.addNewCarPositive">
+    <configuration name="AddNewCarsTests.addNewCarPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -59,7 +59,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests&quot;" />
+            <option value="&quot;tests.AddNewCarsTests.addNewCarPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -142,7 +142,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.positiveLoginTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTests.registrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -155,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.positiveLoginTest&quot;" />
+            <option value="&quot;tests.RegistrationTests.registrationPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewCarsTests.addNewCarPositive" />
+        <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
         <item itemvalue="Gradle.LoginTests.negativeLoginWrongEmail" />
         <item itemvalue="Gradle.LoginTests.negativeLoginWrongPassword" />
         <item itemvalue="Gradle.LoginTests.negotiveLoginWrongEmail" />
-        <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.positiveLoginTest" />
       </list>
     </recent_temporary>
   </component>
