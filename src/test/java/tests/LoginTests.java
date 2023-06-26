@@ -45,7 +45,7 @@ public class LoginTests extends TestBase{
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
 //        app.getUser().pause(5000);
-//        Assert.assertTrue(app.getUser().isLoggedSuccess());
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
 
     }
 
