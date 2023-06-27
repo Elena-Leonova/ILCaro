@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1b7d0785-f18b-4f20-8c76-30628d906a94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +47,7 @@
     &quot;last_opened_file_path&quot;: &quot;D:/QA/Automation/QA_Auto_Projects/Leumi&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.registrationPositive">
+  <component name="RunManager" selected="Gradle.AddNewCarsTests.addNewCarPositive">
     <configuration name="AddNewCarsTests.addNewCarPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -168,10 +170,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddNewCarsTests.addNewCarPositive" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeWrongPassword" />
         <item itemvalue="Gradle.LoginTests.positiveLoginUser" />
-        <item itemvalue="Gradle.AddNewCarsTests.addNewCarPositive" />
         <item itemvalue="Gradle.LoginTests.negativeLoginWrongEmail" />
       </list>
     </recent_temporary>
