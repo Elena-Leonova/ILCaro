@@ -44,11 +44,11 @@ public class HelperCar extends HelperBase {
 
     public void fieldClick(Car car){
         Rectangle rect = wd.findElement(By.id("serialNumber")).getRect();
-        int x = rect.getX() + rect.getWidth() / 2;
-        int y = rect.getY() + rect.getHeight() / 2;
+        int x = rect.getX() + rect.getWidth() - 10;
+        int y = rect.getY() + rect.getHeight() - 10;
         Actions actions = new Actions(wd);
         actions.moveByOffset(x, y).click().sendKeys(car.getCarRegNumber()).perform();
-      
+
     }
 
 
