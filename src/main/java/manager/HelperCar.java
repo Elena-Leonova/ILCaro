@@ -37,19 +37,11 @@ public class HelperCar extends HelperBase {
         select(By.id("fuel"), car.getFuel());
         type(By.id("seats"), car.getSeats());
         type(By.id("class"), car.getCarClass());
-        fieldClick(car);
-       // type(By.id("serialNumber"), car.getCarRegNumber());
+        type(By.id("serialNumber"), car.getCarRegNumber());
         type(By.id("price"), car.getPrice());
     }
 
-    public void fieldClick(Car car){
-        Rectangle rect = wd.findElement(By.id("serialNumber")).getRect();
-        int x = rect.getX() + rect.getWidth() - 10;
-        int y = rect.getY() + rect.getHeight() - 10;
-        Actions actions = new Actions(wd);
-        actions.moveByOffset(x, y).click().sendKeys(car.getCarRegNumber()).perform();
 
-    }
 
 
 
