@@ -33,8 +33,14 @@ public class RegistrationTests extends TestBase{
                 .withEmail("sasha" + i + "@gmai.com")
                 .withPassword("Mynameislena1");
         app.getUser().openRegistrationForm();
+        logger.info("Method openRegistrationForm() invoked ");
         app.getUser().fillRegistrationForm(user);
+        logger.info("Method fillRegistrationForm() invoked ");
         app.getUser().submitForm();
+        logger.info("Method submitForm()invoked ");
+        logger.info("Registration test strats with data : " + user.getEmail()
+                + " & " + user.getPassword()
+        );
         //Assert.assertTrue(app.getUser().isRegistered());
     }
 

@@ -1,0 +1,1 @@
+20:09:11 INFO  tests.TestBase - Registration test strats with data : sasha549@gmail.com & Mynameislena1!

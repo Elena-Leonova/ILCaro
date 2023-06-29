@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b7d0785-f18b-4f20-8c76-30628d906a94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/lodback.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +41,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/QA/Automation/QA_Auto_Projects/Leumi&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/QA/Automation/QA_Auto_Projects/Leumi",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.AddNewCarsTests.addNewCarPositive">
+}]]></component>
+  <component name="RunManager" selected="Gradle.RegistrationTests.registrationPositive">
     <configuration name="AddNewCarsTests.addNewCarPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,9 +172,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddNewCarsTests.addNewCarPositive" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
         <item itemvalue="Gradle.RegistrationTests.registrationNegativeWrongPassword" />
+        <item itemvalue="Gradle.AddNewCarsTests.addNewCarPositive" />
         <item itemvalue="Gradle.LoginTests.positiveLoginUser" />
         <item itemvalue="Gradle.LoginTests.negativeLoginWrongEmail" />
       </list>
