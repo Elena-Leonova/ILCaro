@@ -1,0 +1,19 @@
+17:19:21 INFO  tests.TestBase - Start test --> negativeLoginWrongPassword
+17:19:21 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[.=' Logout ']
+17:19:27 INFO  manager.MyListener - Element with locator-->By.xpath: //a[.=' Logout '] is found
+17:19:27 INFO  manager.NgListener - Start of the test --> negativeLoginWrongPassword
+17:19:27 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+17:19:27 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+17:19:27 INFO  manager.MyListener - Start searching element by locator-->By.id: email
+17:19:27 INFO  manager.MyListener - Element with locator-->By.id: email is found
+17:19:27 INFO  manager.MyListener - Start searching element by locator-->By.id: password
+17:19:27 INFO  manager.MyListener - Element with locator-->By.id: password is found
+17:19:27 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [type='submit']
+17:19:27 INFO  manager.MyListener - Element with locator-->By.cssSelector: [type='submit'] is found
+17:19:27 INFO  tests.TestBase - Registration test strats with data : lena.postrash@gmail.com & Mynameislena1
+17:19:27 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+17:19:27 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+17:19:27 INFO  manager.NgListener - Success test --> negativeLoginWrongPassword
+17:19:27 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //button[.='Ok']
+17:19:29 INFO  manager.MyListener - Element with locator-->By.xpath: //button[.='Ok'] is found
+17:19:29 INFO  tests.TestBase - ==================================

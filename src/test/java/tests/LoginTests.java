@@ -1,11 +1,15 @@
 package tests;
 
+import manager.NgListener;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+@Listeners(NgListener.class)
 
 public class LoginTests extends TestBase{
     @BeforeMethod
@@ -45,6 +49,9 @@ public class LoginTests extends TestBase{
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
 //        app.getUser().pause(5000);
+        logger.info("Registration test starts with data : " + user.getEmail()
+                + " & " + user.getPassword()
+        );
         Assert.assertTrue(app.getUser().isLoggedSuccess());
 
     }
@@ -55,6 +62,10 @@ public class LoginTests extends TestBase{
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
+        logger.info("Registration test starts with data : " + user.getEmail()
+                + " & " + user.getPassword()
+        );
+        app.getUser().pause(2000);
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[.=\"It'snot look like email\"]")));
        //Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
     }
@@ -65,6 +76,9 @@ public class LoginTests extends TestBase{
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
+        logger.info("Registration test starts with data : " + user.getEmail()
+                + " & " + user.getPassword()
+        );
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
     }
     @AfterMethod
