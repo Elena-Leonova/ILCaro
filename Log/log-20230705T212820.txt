@@ -1,0 +1,145 @@
+21:28:26 INFO  tests.TestBase - Start test --> addNewCarPositive
+21:28:26 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[.=' Logout ']
+21:28:31 INFO  manager.MyListener - Element with locator-->By.xpath: //a[.=' Logout '] is found
+21:28:31 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+21:28:31 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+21:28:31 INFO  manager.MyListener - Start searching element by locator-->By.id: email
+21:28:31 INFO  manager.MyListener - Element with locator-->By.id: email is found
+21:28:31 INFO  manager.MyListener - Start searching element by locator-->By.id: password
+21:28:31 INFO  manager.MyListener - Element with locator-->By.id: password is found
+21:28:31 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [type='submit']
+21:28:31 INFO  manager.MyListener - Element with locator-->By.cssSelector: [type='submit'] is found
+21:28:31 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //button[.='Ok']
+21:28:33 INFO  manager.MyListener - Element with locator-->By.xpath: //button[.='Ok'] is found
+21:28:33 INFO  manager.NgListener - Start of the test --> addNewCarPositive
+21:28:38 INFO  manager.MyListener - Start searching element by locator-->By.id: 1
+21:28:38 INFO  manager.MyListener - Element with locator-->By.id: 1 is found
+21:28:38 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: h1
+21:28:38 INFO  manager.MyListener - Element with locator-->By.cssSelector: h1 is found
+21:28:38 INFO  manager.MyListener - Start searching element by locator-->By.id: pickUpPlace
+21:28:38 INFO  manager.MyListener - Element with locator-->By.id: pickUpPlace is found
+21:28:38 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: div.pac-item
+21:28:38 INFO  manager.MyListener - Element with locator-->By.cssSelector: div.pac-item is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.id: make
+21:28:39 INFO  manager.MyListener - Element with locator-->By.id: make is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.id: model
+21:28:39 INFO  manager.MyListener - Element with locator-->By.id: model is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.id: year
+21:28:39 INFO  manager.MyListener - Element with locator-->By.id: year is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.id: fuel
+21:28:39 INFO  manager.MyListener - Element with locator-->By.id: fuel is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.xpath: .//option[@value = "Petrol"]
+21:28:39 INFO  manager.MyListener - Element with locator-->By.xpath: .//option[@value = "Petrol"] is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.id: seats
+21:28:39 INFO  manager.MyListener - Element with locator-->By.id: seats is found
+21:28:39 INFO  manager.MyListener - Start searching element by locator-->By.id: class
+21:28:39 INFO  manager.MyListener - Element with locator-->By.id: class is found
+21:28:40 INFO  manager.MyListener - Start searching element by locator-->By.id: serialNumber
+21:28:40 INFO  manager.MyListener - Element with locator-->By.id: serialNumber is found
+21:28:40 INFO  manager.MyListener - Start searching element by locator-->By.id: price
+21:28:40 INFO  manager.MyListener - Element with locator-->By.id: price is found
+21:28:40 INFO  manager.NgListener - Success test --> addNewCarPositive
+21:28:40 INFO  tests.TestBase - ==================================
+21:28:40 INFO  tests.TestBase - Start test --> negativeLoginWrongEmail
+21:28:40 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[.=' Logout ']
+21:28:40 INFO  manager.MyListener - Element with locator-->By.xpath: //a[.=' Logout '] is found
+21:28:40 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[.=' Logout ']
+21:28:40 INFO  manager.MyListener - Element with locator-->By.xpath: //a[.=' Logout '] is found
+21:28:40 INFO  manager.NgListener - Start of the test --> negativeLoginWrongEmail
+21:28:40 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+21:28:40 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+21:28:41 INFO  manager.MyListener - Start searching element by locator-->By.id: email
+21:28:41 INFO  manager.MyListener - Element with locator-->By.id: email is found
+21:28:41 INFO  manager.MyListener - Start searching element by locator-->By.id: password
+21:28:41 INFO  manager.MyListener - Element with locator-->By.id: password is found
+21:28:41 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [type='submit']
+21:28:41 INFO  manager.MyListener - Element with locator-->By.cssSelector: [type='submit'] is found
+21:28:41 INFO  tests.TestBase - Registration test starts with data : lena.postrashgmail.com & Mynameislena1!
+21:28:43 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //div[.="It'snot look like email"]
+21:28:43 INFO  manager.MyListener - Element with locator-->By.xpath: //div[.="It'snot look like email"] is found
+21:28:43 INFO  manager.NgListener - Success test --> negativeLoginWrongEmail
+21:28:43 INFO  tests.TestBase - ==================================
+21:28:43 INFO  tests.TestBase - Start test --> negativeLoginWrongPassword
+21:28:43 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[.=' Logout ']
+21:28:49 INFO  manager.MyListener - Element with locator-->By.xpath: //a[.=' Logout '] is found
+21:28:49 INFO  manager.NgListener - Start of the test --> negativeLoginWrongPassword
+21:28:49 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+21:28:49 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+21:28:49 INFO  manager.MyListener - Start searching element by locator-->By.id: email
+21:28:49 INFO  manager.MyListener - Element with locator-->By.id: email is found
+21:28:49 INFO  manager.MyListener - Start searching element by locator-->By.id: password
+21:28:49 INFO  manager.MyListener - Element with locator-->By.id: password is found
+21:28:49 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [type='submit']
+21:28:49 INFO  manager.MyListener - Element with locator-->By.cssSelector: [type='submit'] is found
+21:28:49 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+21:28:49 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+21:28:49 INFO  manager.NgListener - Success test --> negativeLoginWrongPassword
+21:28:49 INFO  tests.TestBase - ==================================
+21:28:49 INFO  tests.TestBase - Start test --> positiveLoginUser
+21:28:49 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[.=' Logout ']
+21:28:54 INFO  manager.MyListener - Element with locator-->By.xpath: //a[.=' Logout '] is found
+21:28:54 INFO  manager.NgListener - Start of the test --> positiveLoginUser
+21:28:54 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[@ng-reflect-router-link='login']
+21:28:54 INFO  manager.MyListener - Element with locator-->By.xpath: //a[@ng-reflect-router-link='login'] is found
+21:28:56 INFO  manager.MyListener - Something went wrong
+21:28:56 INFO  manager.MyListener - element click intercepted: Element <a _ngcontent-dye-c44="" class="navigation-link ng-star-inserted" ng-reflect-query-params="[object Object]" ng-reflect-router-link="login" href="/login?url=%2Fsearch">...</a> is not clickable at point (1310, 9). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72578eeae5b5d6f760715fce808aef10
+21:28:56 INFO  manager.MyListener - element click intercepted: Element <a _ngcontent-dye-c44="" class="navigation-link ng-star-inserted" ng-reflect-query-params="[object Object]" ng-reflect-router-link="login" href="/login?url=%2Fsearch">...</a> is not clickable at point (1310, 9). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72578eeae5b5d6f760715fce808aef10
+21:28:56 INFO  manager.MyListener - This is a link to screenshot with error: src/test/screenshots/screenshot-1736.png
+21:28:56 INFO  manager.NgListener - Failure test --> positiveLoginUser
+21:28:56 INFO  tests.TestBase - ==================================
+21:28:56 INFO  tests.TestBase - Start test --> registrationNegativeWrongPassword
+21:28:56 INFO  manager.NgListener - Start of the test --> registrationNegativeWrongPassword
+21:28:56 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[text()=' Sign up ']
+21:28:56 INFO  manager.MyListener - Element with locator-->By.xpath: //a[text()=' Sign up '] is found
+21:28:57 INFO  manager.MyListener - Something went wrong
+21:28:57 INFO  manager.MyListener - element click intercepted: Element <a _ngcontent-dye-c44="" class="navigation-link ng-star-inserted" ng-reflect-query-params="[object Object]" ng-reflect-router-link="registration" href="/registration?url=%2Fsearch">...</a> is not clickable at point (1194, 9). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72578eeae5b5d6f760715fce808aef10
+21:28:57 INFO  manager.MyListener - element click intercepted: Element <a _ngcontent-dye-c44="" class="navigation-link ng-star-inserted" ng-reflect-query-params="[object Object]" ng-reflect-router-link="registration" href="/registration?url=%2Fsearch">...</a> is not clickable at point (1194, 9). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72578eeae5b5d6f760715fce808aef10
+21:28:58 INFO  manager.MyListener - This is a link to screenshot with error: src/test/screenshots/screenshot-1737.png
+21:28:58 INFO  manager.NgListener - Failure test --> registrationNegativeWrongPassword
+21:28:58 INFO  tests.TestBase - ==================================
+21:28:58 INFO  tests.TestBase - Start test --> registrationPositive
+21:28:58 INFO  manager.NgListener - Start of the test --> registrationPositive
+21:28:58 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[text()=' Sign up ']
+21:28:58 INFO  manager.MyListener - Element with locator-->By.xpath: //a[text()=' Sign up '] is found
+21:28:59 INFO  manager.MyListener - Something went wrong
+21:28:59 INFO  manager.MyListener - element click intercepted: Element <a _ngcontent-dye-c44="" class="navigation-link ng-star-inserted" ng-reflect-query-params="[object Object]" ng-reflect-router-link="registration" href="/registration?url=%2Fsearch">...</a> is not clickable at point (1194, 9). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72578eeae5b5d6f760715fce808aef10
+21:28:59 INFO  manager.MyListener - element click intercepted: Element <a _ngcontent-dye-c44="" class="navigation-link ng-star-inserted" ng-reflect-query-params="[object Object]" ng-reflect-router-link="registration" href="/registration?url=%2Fsearch">...</a> is not clickable at point (1194, 9). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
+  (Session info: chrome=114.0.5735.199)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58547}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72578eeae5b5d6f760715fce808aef10
+21:29:00 INFO  manager.MyListener - This is a link to screenshot with error: src/test/screenshots/screenshot-1739.png
+21:29:00 INFO  manager.NgListener - Failure test --> registrationPositive
+21:29:00 INFO  tests.TestBase - ==================================

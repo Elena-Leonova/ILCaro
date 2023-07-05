@@ -35,11 +35,12 @@ public class HelperUser extends HelperBase {
         type(By.id("lastName"), user.getLastName());
         type(By.id("email"),user.getEmail());
         type(By.id("password"), user.getPassword());
+        pause(3000);
        checkboxClick();
     }
 
     public void checkboxClick(){
-        System.out.println("checkbox is Clicked");
+        //System.out.println("checkbox is Clicked");
         // variant 1
         // click(By.cssSelector("label[for='terms-of-use']"));
         // variant 2
@@ -50,6 +51,7 @@ public class HelperUser extends HelperBase {
         int x = rect.getX() + 5;
         int y = rect.getY() + rect.getHeight() / 4;
         Actions actions = new Actions(wd);
+        pause(2000);
         actions.moveByOffset(x, y).click().perform();
 
     }

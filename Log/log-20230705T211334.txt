@@ -1,0 +1,41 @@
+21:13:39 INFO  tests.TestBase - Start test --> registrationNegativeWrongPassword
+21:13:39 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[text()=' Sign up ']
+21:13:39 INFO  manager.MyListener - Element with locator-->By.xpath: //a[text()=' Sign up '] is found
+21:13:39 INFO  tests.TestBase - Method openRegistrationForm() invoked 
+21:13:39 INFO  manager.MyListener - Start searching element by locator-->By.id: name
+21:13:39 INFO  manager.MyListener - Element with locator-->By.id: name is found
+21:13:40 INFO  manager.MyListener - Start searching element by locator-->By.id: lastName
+21:13:40 INFO  manager.MyListener - Element with locator-->By.id: lastName is found
+21:13:40 INFO  manager.MyListener - Start searching element by locator-->By.id: email
+21:13:40 INFO  manager.MyListener - Element with locator-->By.id: email is found
+21:13:40 INFO  manager.MyListener - Start searching element by locator-->By.id: password
+21:13:40 INFO  manager.MyListener - Element with locator-->By.id: password is found
+21:13:41 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .checkbox-container
+21:13:41 INFO  manager.MyListener - Element with locator-->By.cssSelector: .checkbox-container is found
+21:13:41 INFO  tests.TestBase - Method fillRegistrationForm() invoked 
+21:13:41 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [type='submit']
+21:13:41 INFO  manager.MyListener - Element with locator-->By.cssSelector: [type='submit'] is found
+21:13:41 INFO  tests.TestBase - Method submitForm()invoked 
+21:13:41 INFO  tests.TestBase - Registration test starts with data : sasha819@gmail.com & Mynameislena1
+21:13:41 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .dialog-container
+21:13:46 INFO  manager.MyListener - Something went wrong
+21:13:46 INFO  manager.MyListener - no such element: Unable to locate element: {"method":"css selector","selector":".dialog-container"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e45d14edb5e586215879341d815e1422
+*** Element info: {Using=css selector, value=.dialog-container}
+21:13:46 INFO  manager.MyListener - no such element: Unable to locate element: {"method":"css selector","selector":".dialog-container"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ELENA', ip: '192.168.1.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lenap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e45d14edb5e586215879341d815e1422
+*** Element info: {Using=css selector, value=.dialog-container}
+21:13:47 INFO  manager.MyListener - This is a link to screenshot with error: src/test/screenshots/screenshot-826.png
+21:13:47 INFO  tests.TestBase - ==================================

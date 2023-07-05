@@ -1,0 +1,23 @@
+21:32:15 INFO  tests.TestBase - Start test --> registrationPositive
+21:32:15 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //a[text()=' Sign up ']
+21:32:15 INFO  manager.MyListener - Element with locator-->By.xpath: //a[text()=' Sign up '] is found
+21:32:15 INFO  manager.MyListener - Start searching element by locator-->By.id: name
+21:32:15 INFO  manager.MyListener - Element with locator-->By.id: name is found
+21:32:15 INFO  manager.MyListener - Start searching element by locator-->By.id: lastName
+21:32:15 INFO  manager.MyListener - Element with locator-->By.id: lastName is found
+21:32:16 INFO  manager.MyListener - Start searching element by locator-->By.id: email
+21:32:16 INFO  manager.MyListener - Element with locator-->By.id: email is found
+21:32:16 INFO  manager.MyListener - Start searching element by locator-->By.id: password
+21:32:16 INFO  manager.MyListener - Element with locator-->By.id: password is found
+21:32:19 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .checkbox-container
+21:32:19 INFO  manager.MyListener - Element with locator-->By.cssSelector: .checkbox-container is found
+21:32:21 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: [type='submit']
+21:32:21 INFO  manager.MyListener - Element with locator-->By.cssSelector: [type='submit'] is found
+21:32:22 INFO  tests.TestBase - Registration test starts with data : sasha1935@gmail.com & Mynameislena1!
+21:32:22 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .dialog-container
+21:32:23 INFO  manager.MyListener - Element with locator-->By.cssSelector: .dialog-container is found
+21:32:23 INFO  manager.MyListener - Start searching element by locator-->By.cssSelector: .dialog-container
+21:32:23 INFO  manager.MyListener - Element with locator-->By.cssSelector: .dialog-container is found
+21:32:23 INFO  manager.MyListener - Start searching element by locator-->By.xpath: //button[.='Ok']
+21:32:23 INFO  manager.MyListener - Element with locator-->By.xpath: //button[.='Ok'] is found
+21:32:23 INFO  tests.TestBase - ==================================

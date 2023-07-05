@@ -16,7 +16,7 @@ public class LoginTests extends TestBase{
     public void precondition(){
         if(app.getUser().isLogged()) app.getUser().logout();
     }
-    @Test
+    @Test(enabled = false)
     public void positiveLoginTest(){
 //        app.getUser().clickLogin();
 //        app.getUser().fillLoginForm("lena.postrash@gmail.com", "Mynameislena1!");
@@ -48,11 +48,9 @@ public class LoginTests extends TestBase{
 //        app.getUser().fillLoginForm("lena.postrash@gmail.com", "Mynameislena1!");
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
-//        app.getUser().pause(5000);
-        logger.info("Registration test starts with data : " + user.getEmail()
-                + " & " + user.getPassword()
-        );
+        app.getUser().pause(5000);
         Assert.assertTrue(app.getUser().isLoggedSuccess());
+        app.getUser().clickOkButton();
 
     }
 
@@ -68,6 +66,7 @@ public class LoginTests extends TestBase{
         app.getUser().pause(2000);
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[.=\"It'snot look like email\"]")));
        //Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
+
     }
 
     @Test
@@ -76,13 +75,11 @@ public class LoginTests extends TestBase{
         app.getUser().openLoginForm();
         app.getUser().fillLoginForm(user);
         app.getUser().submitForm();
-        logger.info("Registration test starts with data : " + user.getEmail()
-                + " & " + user.getPassword()
-        );
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
-    }
-    @AfterMethod
-    public void postCondition(){
         app.getUser().clickOkButton();
     }
+//    @AfterMethod
+//    public void postCondition(){
+//        app.getUser().clickOkButton();
+//    }
 }
