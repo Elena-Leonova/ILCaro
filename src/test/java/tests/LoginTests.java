@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 @Listeners(NgListener.class)
 
 public class LoginTests extends TestBase{
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void precondition(){
         if(app.getUser().isLogged()) app.getUser().logout();
     }
@@ -33,7 +33,7 @@ public class LoginTests extends TestBase{
 
 
 
-    @Test
+    @Test(groups = {"smokeGroup", "sanityGroup", "regressionGroup"})
     public void positiveLoginUser(){
 //        app.getUser().clickLogin();
 //        app.getUser().fillLoginForm("lena.postrash@gmail.com", "Mynameislena1!");
@@ -78,7 +78,7 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//a[@ng-reflect-router-link='login']")));
         app.getUser().clickOkButton();
     }
-//    @AfterMethod
+//    @AfterMethod(alwaysRun = true)
 //    public void postCondition(){
 //        app.getUser().clickOkButton();
 //    }

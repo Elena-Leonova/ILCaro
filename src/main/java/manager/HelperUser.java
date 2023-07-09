@@ -51,7 +51,7 @@ public class HelperUser extends HelperBase {
         int x = rect.getX() + 5;
         int y = rect.getY() + rect.getHeight() / 4;
         Actions actions = new Actions(wd);
-        pause(2000);
+        pause(3000);
         actions.moveByOffset(x, y).click().perform();
 
     }
@@ -85,7 +85,9 @@ public class HelperUser extends HelperBase {
     public boolean isRegistered(){
         WebDriverWait wait = new WebDriverWait(wd, 10);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container"))));
+        //wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.id("#mat-dialog-0"))));
         return wd.findElement(By.cssSelector(".dialog-container")).getText().contains("Registered");
+        //return wd.findElement(By.id("#mat-dialog-0")).getText().contains("Registered");
     }
 
     public void clickOkButton(){
