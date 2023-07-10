@@ -1,6 +1,7 @@
 package tests;
 
 import manager.NgListener;
+import manager.ProviderData;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -52,6 +53,17 @@ public class LoginTests extends TestBase{
         Assert.assertTrue(app.getUser().isLoggedSuccess());
         app.getUser().clickOkButton();
 
+    }
+
+    @Test(dataProvider = "userModelListDTO", dataProviderClass = ProviderData.class)
+    public void positiveLoginUserDTO(User user){
+        logger.info("User: " + user.toString() + " is provided");
+        app.getUser().openLoginForm();
+        app.getUser().fillLoginForm(user);
+        app.getUser().submitForm();
+//        app.getUser().pause(5000);
+//        Assert.assertTrue(app.getUser().isLoggedSuccess());
+       app.getUser().clickOkButton();
     }
 
     @Test
