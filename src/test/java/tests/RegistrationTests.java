@@ -1,5 +1,6 @@
 package tests;
 
+import manager.ProviderData;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -32,11 +33,26 @@ public class RegistrationTests extends TestBase{
         Assert.assertTrue(app.getUser().isRegistered());
         app.getUser().clickOkButton();
     }
+    @Test(dataProvider = "userModelListReg", dataProviderClass = ProviderData.class)
+    public void registrationUserModelListRegPositive(User user){
+        logger.info("User : "
+                + user.getName() + " & "
+                + user.getLastName() + " & "
+                + user.getEmail()+ " & "
+                + user.getPassword() + " is provided");
+        app.getUser().openRegistrationForm();
+        app.getUser().pause(2000);
+        app.getUser().fillRegistrationForm(user);
+        app.getUser().submitForm();
+        app.getUser().pause(2000);
+        Assert.assertTrue(app.getUser().isRegistered());
+        app.getUser().clickOkButton();
+        app.getUser().pause(2000);
+    }
 
     @Test(priority = 2)
     public void registrationNegativeWrongPassword(){
         int i =(int)(System.currentTimeMillis()/1000)%3600;
-
         User user = new User()
                 .withName("Sasha")
                 .withLastName("Petrov")
@@ -49,8 +65,7 @@ public class RegistrationTests extends TestBase{
         app.getUser().submitForm();
         logger.info("Method submitForm()invoked ");
         logger.info("Registration test starts with data : " + user.getEmail()
-                + " & " + user.getPassword()
-        );
+                + " & " + user.getPassword());
         app.getUser().pause(2000);
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[@class='error'][.='Password must contain 1 uppercase letter, 1 lowercase letter, 1 number and one special symbol of [@$#^&*!]']")));
     }
