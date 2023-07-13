@@ -6,19 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="1b7d0785-f18b-4f20-8c76-30628d906a94" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T212759.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T212820.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T212950.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T213025.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T213209.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T213230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T213412.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T213542.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/log-20230705T213706.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ProviderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ProviderData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RegistrationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,8 +85,13 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.registrationUserModelListRegPositive">
-    <configuration name="LoginTests.positiveLoginUserDTO" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\QA\Automation\QA_Auto_Projects\ILCarro\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.LoginTests.positiveLoginUser">
+    <configuration name="LoginTests.positiveLoginUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -104,7 +104,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.LoginTests.positiveLoginUserDTO&quot;" />
+            <option value="&quot;tests.LoginTests.positiveLoginUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegistrationTests.registrationPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationPositiveCSV" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RegistrationTests.registrationPositiveCSV&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -139,7 +187,7 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="SearchTests.searchPositiveTestDatePickerDays" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchTests.searchPositiveTestDatePickerYearsCW" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -152,55 +200,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.SearchTests.searchPositiveTestDatePickerDays&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchTests.searchPositiveTestDatePickerMonths" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.SearchTests.searchPositiveTestDatePickerMonths&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="SearchTests.searchPositiveTestDatePickerYears" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.SearchTests.searchPositiveTestDatePickerYears&quot;" />
+            <option value="&quot;tests.SearchTests.searchPositiveTestDatePickerYearsCW&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -213,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LoginTests.positiveLoginUser" />
+        <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
+        <item itemvalue="Gradle.RegistrationTests.registrationPositiveCSV" />
         <item itemvalue="Gradle.RegistrationTests.registrationUserModelListRegPositive" />
-        <item itemvalue="Gradle.LoginTests.positiveLoginUserDTO" />
-        <item itemvalue="Gradle.SearchTests.searchPositiveTestDatePickerYears" />
-        <item itemvalue="Gradle.SearchTests.searchPositiveTestDatePickerMonths" />
-        <item itemvalue="Gradle.SearchTests.searchPositiveTestDatePickerDays" />
+        <item itemvalue="Gradle.SearchTests.searchPositiveTestDatePickerYearsCW" />
       </list>
     </recent_temporary>
   </component>

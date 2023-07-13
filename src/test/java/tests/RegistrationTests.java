@@ -4,14 +4,16 @@ import manager.ProviderData;
 import models.User;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase{
     @BeforeMethod(alwaysRun = true)
     public void precondition(){
-        if(app.getUser().isLogged()) app.getUser().logout();
-
+        if(app.getUser().isLogged()){
+            app.getUser().logout();
+        }
     }
     @Test(priority = 1, groups = {"sanityGroup", "regressionGroup"})
     public void registrationPositive(){
@@ -31,7 +33,22 @@ public class RegistrationTests extends TestBase{
         + " & " + user.getPassword()
         );
         Assert.assertTrue(app.getUser().isRegistered());
-        app.getUser().clickOkButton();
+
+    }
+
+    @Test(dataProvider = "userModelListDTO_CSV", dataProviderClass = ProviderData.class)
+    public void registrationPositiveCSV(User user){
+
+        app.getUser().openRegistrationForm();
+        app.getUser().pause(2000);
+        app.getUser().fillRegistrationForm(user);
+        app.getUser().submitForm();
+        app.getUser().pause(2000);
+        logger.info("Registration test starts with data : " + user.getEmail()
+                + " & " + user.getPassword()
+        );
+        Assert.assertTrue(app.getUser().isRegistered());
+
     }
     @Test(dataProvider = "userModelListReg", dataProviderClass = ProviderData.class)
     public void registrationUserModelListRegPositive(User user){
@@ -46,7 +63,6 @@ public class RegistrationTests extends TestBase{
         app.getUser().submitForm();
         app.getUser().pause(2000);
         Assert.assertTrue(app.getUser().isRegistered());
-        app.getUser().clickOkButton();
         app.getUser().pause(2000);
     }
 
@@ -68,6 +84,11 @@ public class RegistrationTests extends TestBase{
                 + " & " + user.getPassword());
         app.getUser().pause(2000);
         Assert.assertTrue(app.getUser().isElementPresent(By.xpath("//div[@class='error'][.='Password must contain 1 uppercase letter, 1 lowercase letter, 1 number and one special symbol of [@$#^&*!]']")));
+    }
+
+    @AfterMethod(alwaysRun = true)
+    public void postConditions(){
+        app.getUser().clickOkButton();
     }
 
 }

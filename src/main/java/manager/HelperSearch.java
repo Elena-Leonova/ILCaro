@@ -3,12 +3,18 @@ package manager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 
 public class HelperSearch extends HelperBase{
     public HelperSearch(WebDriver wd) {
         super(wd);
     }
 
+    public void clickSearch(){
+        click(By.id("0"));
+    }
     public void fillSearchForm(String city, String dateFrom, String dateTo){
         fillCity(city);
         selectPeriodDays(dateFrom, dateTo);
@@ -22,13 +28,13 @@ public class HelperSearch extends HelperBase{
 
 
 
-    private void selectPeriodDays(String dateFrom, String dateTo) {
+    public void selectPeriodDays(String dateFrom, String dateTo) {
        // click(By.id("dates"));
         type(By.id("dates"), dateFrom + " - " + dateTo);
         pause(2000);
     }
 
-    private void selectPeriodDaysDatePicker(String dateFrom, String dateTo) {
+    public void selectPeriodDaysDatePicker(String dateFrom, String dateTo) {
          //       7/10/2023
         // index  0  1  2
         String[] startDate = dateFrom.split("/");
@@ -46,7 +52,7 @@ public class HelperSearch extends HelperBase{
     }
 
 
-    private void fillCity(String city) {
+    public void fillCity(String city) {
         type(By.id("city"), city);
         pause(2000);
         click(By.cssSelector("div.pac-item"));
@@ -62,6 +68,71 @@ public class HelperSearch extends HelperBase{
         selectPeriodMonthsDatePicker(dateFrom, dateTo);
     }
 
+    public void fillSearchFormDatePickerMonthsCW(String city, String dateFrom, String dateTo){
+        fillCity(city);
+        selectPeriodMonthsDatePickerCW(dateFrom, dateTo);
+    }
+    public void selectPeriodMonthsDatePickerCW(String dateFrom, String dateTo) {
+        int fromNowToStartMonth = 0, startToEndMonth = 0;
+        String[] startDate = dateFrom.split("/");
+        String[] endDateTo = dateTo.split("/");
+        startToEndMonth = Integer.parseInt(endDateTo[0])-Integer.parseInt(startDate[0]);
+        click(By.id("dates"));
+        if(LocalDate.now().getMonthValue() != Integer.parseInt(startDate[0])){
+            fromNowToStartMonth = Integer.parseInt(startDate[0]) - LocalDate.now().getMonthValue();
+        }
+
+        for(int i = 0; i<fromNowToStartMonth; i++){
+            click(By.xpath("//button[@aria-label='Next month']"));
+        }
+        String locatorStartDate = String.format("//div[.=' %s ']", startDate[1]);
+        String locatorEndDate = String.format("//div[.=' %s ']", endDateTo[1]);
+        click(By.xpath(locatorStartDate));
+        for(int i = 0; i<startToEndMonth; i++){
+            click(By.xpath("//button[@aria-label='Next month']"));
+            pause(1000);
+        }
+        click(By.xpath(locatorEndDate));
+        pause(3000);
+
+    }
+
+    public void fillSearchFormDatePickerYearsCW(String city, String dateFrom, String dateTo){
+        fillCity(city);
+        selectPeriodYearsDatePickerCW(dateFrom, dateTo);
+    }
+    public void selectPeriodYearsDatePickerCW(String dateFrom, String dateTo) {
+        LocalDate startDate = LocalDate.parse(dateFrom, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        LocalDate endDate = LocalDate.parse(dateTo, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+       // LocalDate startDate = LocalDate.parse(dateFrom, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        //LocalDate endDate = LocalDate.parse(dateTo, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        LocalDate nowDate = LocalDate.now();
+        String locatorStartDate = String.format("//div[.=' %s ']", startDate.getDayOfMonth());
+        String locatorEndDate = String.format("//div[.=' %s ']", endDate.getDayOfMonth());
+
+        click(By.id("dates"));
+
+        int startToEndMonth = startDate.getYear() - nowDate.getYear() == 0 ?
+        startDate.getMonthValue() - nowDate.getMonthValue() :
+        12 - nowDate.getMonthValue() + startDate.getMonthValue();
+
+        for(int i = 0; i<startToEndMonth; i++){
+            click(By.xpath("//button[@aria-label='Next month']"));
+            pause(1000);
+        }
+        click(By.xpath(locatorStartDate));
+
+        startToEndMonth = endDate.getYear()-startDate.getYear() == 0 ?
+                endDate.getMonthValue() - startDate.getMonthValue() :
+                12 - startDate.getMonthValue() - endDate.getMonthValue();
+
+        for(int i = 0; i<startToEndMonth; i++){
+            click(By.xpath("//button[@aria-label='Next month']"));
+            pause(1000);
+        }
+        click(By.xpath(locatorEndDate));
+        pause(3000);
+    }
 
     private void selectPeriodMonthsDatePicker(String dateFrom, String dateTo) {
         String currentDate = "07/12/2023";

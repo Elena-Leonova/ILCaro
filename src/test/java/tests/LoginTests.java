@@ -17,6 +17,7 @@ public class LoginTests extends TestBase{
     public void precondition(){
         if(app.getUser().isLogged()) app.getUser().logout();
     }
+
     @Test(enabled = false)
     public void positiveLoginTest(){
 //        app.getUser().clickLogin();
