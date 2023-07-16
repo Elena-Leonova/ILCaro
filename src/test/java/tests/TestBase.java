@@ -25,7 +25,7 @@ public class TestBase {
 
     @AfterSuite(alwaysRun = true)
     public void stop(){
-        //app.tearDown();
+        app.tearDown();
     }
 
     @BeforeMethod(alwaysRun = true)

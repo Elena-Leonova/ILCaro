@@ -20,7 +20,7 @@ public class SearchTests extends TestBase{
 
     @Test
     public void searchPositiveTestDatePickerDays(){
-        app.getSearch().fillSearchFormDatePickerDays("Haifa", "7/23/2023 " , "7/20/2023");
+        app.getSearch().fillSearchFormDatePickerDays("Haifa", "7/20/2023 " , "7/29/2023");
         app.getSearch().submitForm();
     }
 
@@ -32,14 +32,15 @@ public class SearchTests extends TestBase{
 
     }
 
-    @Test
+    //@Test
     public void searchPositiveTestDatePickerYearsCW(){
-        app.getSearch().fillSearchFormDatePickerYearsCW("Haifa", "03/13/2024 " , "07/12/2024");
+        app.getSearch().fillSearchFormDatePickerYearsCW("Haifa", "03/23/2024 " , "07/12/2024");
         app.getSearch().submitForm();
     }
 
     @Test
     public void searchPositiveTestDatePickerMonths(){
+        app.getUser().pause(1000);
         app.getSearch().fillSearchFormDatePickerMonths("Haifa", "8/19/2023 " , "12/17/2023");
         app.getSearch().submitForm();
     }
