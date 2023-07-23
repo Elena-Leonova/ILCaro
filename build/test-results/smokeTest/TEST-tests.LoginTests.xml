@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.LoginTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-07-23T15:16:26" hostname="ELENA" time="25.688">
+  <properties/>
+  <testcase name="negativeLoginWrongEmail" classname="tests.LoginTests" time="3.297"/>
+  <testcase name="negativeLoginWrongPassword" classname="tests.LoginTests" time="1.93"/>
+  <testcase name="positiveLoginUser" classname="tests.LoginTests" time="6.081"/>
+  <testcase name="positiveLoginUserDTO[0](models.User@22590e3e)" classname="tests.LoginTests" time="1.18"/>
+  <testcase name="positiveLoginUserDTO[1](models.User@51ce6f85)" classname="tests.LoginTests" time="1.02"/>
+  <testcase name="positiveLoginUserDTO[2](models.User@1abfe081)" classname="tests.LoginTests" time="1.15"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1690125388018	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ilcarro.web.app."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ilcarro.web.app."
+]]></system-err>
+</testsuite>

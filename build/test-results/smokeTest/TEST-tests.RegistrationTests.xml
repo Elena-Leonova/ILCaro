@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.RegistrationTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-07-23T15:16:52" hostname="ELENA" time="103.512">
+  <properties/>
+  <testcase name="registrationPositive" classname="tests.RegistrationTests" time="8.232"/>
+  <testcase name="registrationUserModelListRegPositive[0](models.User@36a6bea6)" classname="tests.RegistrationTests" time="10.247"/>
+  <testcase name="registrationUserModelListRegPositive[1](models.User@46349b95)" classname="tests.RegistrationTests" time="10.18"/>
+  <testcase name="registrationUserModelListRegPositive[2](models.User@7f5b9db)" classname="tests.RegistrationTests" time="10.189"/>
+  <testcase name="registrationPositiveCSV[0](models.User@6cd64b3f)" classname="tests.RegistrationTests" time="8.492"/>
+  <testcase name="registrationPositiveCSV[1](models.User@261db982)" classname="tests.RegistrationTests" time="8.399"/>
+  <testcase name="registrationPositiveCSV[2](models.User@695c938d)" classname="tests.RegistrationTests" time="8.252"/>
+  <testcase name="registrationPositiveCSV[3](models.User@16ac5d35)" classname="tests.RegistrationTests" time="8.302"/>
+  <testcase name="registrationPositiveCSV[4](models.User@662e682a)" classname="tests.RegistrationTests" time="8.279"/>
+  <testcase name="registrationNegativeWrongEmail" classname="tests.RegistrationTests" time="6.397"/>
+  <testcase name="registrationNegativeWrongPassword" classname="tests.RegistrationTests" time="8.442"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1690125500761	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+1690125513249	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+]]></system-err>
+</testsuite>
